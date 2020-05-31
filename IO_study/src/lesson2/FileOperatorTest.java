@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class FileOperatorTest {
     @Test
     public void fileRead1() throws IOException {
-        //File类测试
+        //File类测试   jckadsic
         /*String path = "E:\\java_code\\files\\";
         String name = "demo.txt";//可以替换成你想检测的文件
         String pathname = path + name;
@@ -164,7 +164,6 @@ public class FileOperatorTest {
 
     }
 
-    //使用字符缓冲流进行文件拷贝
     @Test
     public void testBufferReader_Writer() throws IOException {
         FileReader fileReader = new FileReader("bit.txt");
