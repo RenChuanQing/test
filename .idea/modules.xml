@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IO_study/IO_study.iml" filepath="$PROJECT_DIR$/IO_study/IO_study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../maven-Test.iml" filepath="$PROJECT_DIR$/../maven-Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../maven-test/maven-test.iml" filepath="$PROJECT_DIR$/../maven-test/maven-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/net-studay/net-studay.iml" filepath="$PROJECT_DIR$/net-studay/net-studay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlet-blog/servlet-blog.iml" filepath="$PROJECT_DIR$/servlet-blog/servlet-blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread-study/thread-study.iml" filepath="$PROJECT_DIR$/thread-study/thread-study.iml" />
+    </modules>
+  </component>
+</project>
