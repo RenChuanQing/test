@@ -176,8 +176,73 @@ public class FileOperatorTest {
         }
         fileReader.close();
         bufferedReader.close();
+        bufferedWriter.close();
         fileWriter.close();
 
+    }
+    @Test
+    public void testInputReader(){
+        InputStream inputStream = System.in;
+        BufferedWriter bufferedWriter = null;
+        BufferedReader bufferedReader = null;
+        try {
+            bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+            bufferedWriter = new BufferedWriter(new FileWriter("ab.txt"));
+            String line = null;
+            while((line = bufferedReader.readLine()) != null){
+                if("exit".equals(line)){
+                    break;
+                }
+                bufferedWriter.write(line);
+                bufferedWriter.newLine();
+                bufferedWriter.flush();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if(bufferedWriter != null){
+                    bufferedWriter.close();
+                }
+                if(bufferedReader != null){
+                    bufferedReader.close();
+                }
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+        }
+    }
+    @Test
+    public void testOutputReader(){
+        OutputStream outputStream = System.out;
+        BufferedWriter bufferedWriter = null;
+        BufferedReader bufferedReader = null;
+        try {
+            bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream));
+            bufferedReader = new BufferedReader(new FileReader("a.txt"));
+            String line = null;
+            while((line = bufferedReader.readLine()) != null){
+                if("exit".equals(line)){
+                    break;
+                }
+                bufferedWriter.write(line);
+                bufferedWriter.newLine();
+                bufferedWriter.flush();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if(bufferedWriter != null){
+                    bufferedWriter.close();
+                }
+                if(bufferedReader != null){
+                    bufferedReader.close();
+                }
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+        }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);//实例化一个Scanner对象
