@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IO_study/IO_study.iml" filepath="$PROJECT_DIR$/IO_study/IO_study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO_study/JVM_Study.iml" filepath="$PROJECT_DIR$/IO_study/JVM_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JVM_Study/jvm_Study.iml" filepath="$PROJECT_DIR$/JVM_Study/jvm_Study.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-Test.iml" filepath="$PROJECT_DIR$/../maven-Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-test/maven-test.iml" filepath="$PROJECT_DIR$/../maven-test/maven-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/net-studay/net-studay.iml" filepath="$PROJECT_DIR$/net-studay/net-studay.iml" />
